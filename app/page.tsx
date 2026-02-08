@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       const newHeart = {
-        id: Date.now(),
+        id: Date.now() + Math.random(),
         left: Math.random() * 100,
         duration: Math.random() * 3 + 3,
       };
@@ -17,7 +17,7 @@ export default function Home() {
       setTimeout(() => {
         setHearts((prev) => prev.filter((h) => h.id !== newHeart.id));
       }, (newHeart.duration + 1) * 1000);
-    }, 500);
+    }, 300);
 
     return () => clearInterval(interval);
   }, []);
