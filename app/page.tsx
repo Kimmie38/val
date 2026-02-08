@@ -91,6 +91,7 @@ export default function Home() {
           style={{
             left: `${heart.left}%`,
             animationDuration: `${heart.duration}s`,
+            animation: `fall ${heart.duration}s linear forwards`,
           }}
         >
           ❤️
