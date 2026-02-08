@@ -41,12 +41,9 @@ body {
 .falling-heart {
   position: fixed;
   font-size: 2rem;
-  animation: fall linear forwards;
   pointer-events: none;
   z-index: 1;
   will-change: transform;
-  left: var(--left-position, 50%);
-  transform: translateX(-50%);
   top: -10vh;
 }
 
